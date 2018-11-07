@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,78 +15,68 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReverseGeo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="paste latitude and longitude here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-qi-YVy">
-                                <rect key="frame" x="70.5" y="75" width="234" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Geo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-5j-75T">
+                                <rect key="frame" x="111.5" y="40" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="paste latitude and longitude here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-qi-YVy">
+                                <rect key="frame" x="43" y="81" width="234" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARe-MF-L0S">
-                                <rect key="frame" x="16" y="131" width="161.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35Q-9u-Svp">
-                                <rect key="frame" x="197.5" y="131" width="161.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XC8-2i-bdw">
-                                <rect key="frame" x="16" y="240" width="343" height="407"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-Ul-IFj">
-                                <rect key="frame" x="139" y="186" width="97" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIk-Ny-xzg" userLabel="resultsLabel">
+                                <rect key="frame" x="20" y="209" width="280" height="339"/>
+                                <color key="backgroundColor" red="0.81276755140000001" green="1" blue="1" alpha="0.4411922089041096" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="CYw-KT-Zs8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="5Bh-RM-Bhu"/>
                                 </constraints>
-                                <state key="normal" title="reverse Geo it"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-Ul-IFj">
+                                <rect key="frame" x="20" y="139" width="117" height="30"/>
+                                <state key="normal" title="reverse from text"/>
                                 <connections>
                                     <action selector="startGeo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5b-u6-e93"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Geo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-5j-75T">
-                                <rect key="frame" x="107" y="37" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfW-df-11f">
+                                <rect key="frame" x="171" y="139" width="129" height="30"/>
+                                <state key="normal" title="reverse from paste"/>
+                                <connections>
+                                    <action selector="geoFromPaste:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfi-HI-uBT"/>
+                                    <action selector="startGeo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nO2-Q0-sS8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ARe-MF-L0S" firstAttribute="baseline" secondItem="35Q-9u-Svp" secondAttribute="baseline" id="2tA-qb-ZAo"/>
-                            <constraint firstAttribute="bottom" secondItem="XC8-2i-bdw" secondAttribute="bottom" constant="20" symbolic="YES" id="3Om-HG-d61"/>
-                            <constraint firstItem="ARe-MF-L0S" firstAttribute="top" secondItem="L7d-qi-YVy" secondAttribute="bottom" constant="26" id="9uP-PZ-2aQ"/>
-                            <constraint firstItem="NfH-5j-75T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="BPC-qc-TE7"/>
-                            <constraint firstItem="XC8-2i-bdw" firstAttribute="centerX" secondItem="iY0-Ul-IFj" secondAttribute="centerX" id="C8c-y7-gKj"/>
-                            <constraint firstItem="iY0-Ul-IFj" firstAttribute="top" secondItem="35Q-9u-Svp" secondAttribute="bottom" constant="34" id="Dsi-NZ-vTS"/>
-                            <constraint firstItem="XC8-2i-bdw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="E7C-cF-D1H"/>
-                            <constraint firstItem="ARe-MF-L0S" firstAttribute="leading" secondItem="XC8-2i-bdw" secondAttribute="leading" id="Rgp-kJ-hjC"/>
-                            <constraint firstItem="35Q-9u-Svp" firstAttribute="width" secondItem="ARe-MF-L0S" secondAttribute="width" id="S1W-Mp-wkx"/>
-                            <constraint firstItem="35Q-9u-Svp" firstAttribute="leading" secondItem="ARe-MF-L0S" secondAttribute="trailing" constant="20" id="YJV-lc-gfV"/>
+                            <constraint firstItem="wIk-Ny-xzg" firstAttribute="top" relation="lessThanOrEqual" secondItem="iY0-Ul-IFj" secondAttribute="bottom" constant="40" id="8pl-J5-k83"/>
+                            <constraint firstItem="NfH-5j-75T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BPC-qc-TE7"/>
+                            <constraint firstItem="iY0-Ul-IFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CZN-sf-CtZ"/>
+                            <constraint firstItem="iY0-Ul-IFj" firstAttribute="top" secondItem="L7d-qi-YVy" secondAttribute="bottom" constant="28" id="Dvb-PR-Qxc"/>
+                            <constraint firstItem="iY0-Ul-IFj" firstAttribute="centerY" secondItem="SfW-df-11f" secondAttribute="centerY" id="Ecb-pb-2jF"/>
+                            <constraint firstItem="SfW-df-11f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iY0-Ul-IFj" secondAttribute="trailing" constant="20" id="KIA-iV-4Ql"/>
+                            <constraint firstItem="wIk-Ny-xzg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b17-Yq-nf6"/>
                             <constraint firstItem="NfH-5j-75T" firstAttribute="centerX" secondItem="L7d-qi-YVy" secondAttribute="centerX" id="b3m-aX-koZ"/>
-                            <constraint firstItem="ARe-MF-L0S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gJ9-Kc-VGE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35Q-9u-Svp" secondAttribute="trailing" constant="16" id="kae-ni-APp"/>
-                            <constraint firstItem="XC8-2i-bdw" firstAttribute="top" secondItem="iY0-Ul-IFj" secondAttribute="bottom" constant="24" id="rQa-5i-wJ1"/>
-                            <constraint firstItem="L7d-qi-YVy" firstAttribute="top" secondItem="NfH-5j-75T" secondAttribute="bottom" constant="17" id="sBa-gB-HH1"/>
-                            <constraint firstItem="NfH-5j-75T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="xEx-ew-gbh"/>
-                            <constraint firstItem="L7d-qi-YVy" firstAttribute="centerX" secondItem="iY0-Ul-IFj" secondAttribute="centerX" id="yrw-Ok-9Kt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SfW-df-11f" secondAttribute="trailing" constant="20" id="jdk-dQ-vaj"/>
+                            <constraint firstItem="NfH-5j-75T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kj8-CF-RU7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIk-Ny-xzg" secondAttribute="bottom" constant="20" id="lnf-ev-uI5"/>
+                            <constraint firstItem="L7d-qi-YVy" firstAttribute="top" secondItem="NfH-5j-75T" secondAttribute="bottom" constant="20" id="sBa-gB-HH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIk-Ny-xzg" secondAttribute="trailing" constant="20" id="ymw-KJ-3kz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="latAndLongTextField" destination="L7d-qi-YVy" id="wPd-9D-n7k"/>
-                        <outlet property="latitudeLabel" destination="ARe-MF-L0S" id="Dw1-aP-ecn"/>
-                        <outlet property="longitudeLabel" destination="35Q-9u-Svp" id="3ng-nf-VZQ"/>
-                        <outlet property="reverseGeoResult" destination="XC8-2i-bdw" id="gNM-j6-irU"/>
+                        <outlet property="reverseGeoResult" destination="wIk-Ny-xzg" id="412-gX-caB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
