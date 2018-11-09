@@ -85,10 +85,11 @@ class ViewController: UIViewController ,CLLocationManagerDelegate {
                 sublocality :\(place.subLocality  ?? "_")
                 bodyOfWater :\(place.ocean ?? place.inlandWater ?? "_")
                 """
-                let pasteboard = UIPasteboard.general
-                pasteboard.string = placedata
+                
                 
                 self.reverseGeoResult.text = placedata
+                let pasteboard = UIPasteboard.general
+                pasteboard.string = self.reverseGeoResult.text
             }
         }
     }
