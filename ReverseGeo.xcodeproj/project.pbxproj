@@ -22,6 +22,7 @@
 		F42EF0632191ADDB009FF4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F42EF0662191ADDB009FF4C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42EF0682191ADDB009FF4C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44C0D14227213B600252FC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		F42EF05B2191ADD9009FF4C5 /* ReverseGeo */ = {
 			isa = PBXGroup;
 			children = (
+				F44C0D14227213B600252FC9 /* README.md */,
 				F42EF05C2191ADD9009FF4C5 /* AppDelegate.swift */,
 				F42EF05E2191ADD9009FF4C5 /* ViewController.swift */,
 				F42EF0602191ADD9009FF4C5 /* Main.storyboard */,
